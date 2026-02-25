@@ -39,7 +39,7 @@ export const foodItems: FoodItem[] = [
   // Beverages
   { id: "26", name: "Fresh Squeezed Orange Juice", description: "Freshly squeezed premium oranges, served chilled with ice.", price: 5.99, image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop", category: "Beverages", rating: 4.5, prepTime: "3 min", calories: 120, country: "United States" },
   { id: "27", name: "Matcha Latte", description: "Premium Japanese matcha whisked with steamed milk and a touch of honey.", price: 6.99, image: "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=400&h=300&fit=crop", category: "Beverages", rating: 4.6, prepTime: "5 min", calories: 140, country: "Japan" },
-  { id: "28", name: "Italian Espresso", description: "Double shot of rich, aromatic espresso from premium Italian roasted beans.", price: 4.99, image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=400&h=300&fit=crop", category: "Beverages", rating: 4.7, prepTime: "3 min", calories: 5, country: "Italy" },
+  { id: "28", name: "Italian Espresso", description: "Double shot of rich, aromatic espresso from premium Italian roasted beans.", price: 4.99, image: "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&h=300&fit=crop", category: "Beverages", rating: 4.7, prepTime: "3 min", calories: 5, country: "Italy" },
 ];
 
 export const categories = [
