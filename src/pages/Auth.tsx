@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { lovable } from "@/integrations/lovable/index";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import { UtensilsCrossed, Mail, Lock, User } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
@@ -116,7 +116,15 @@ const Auth = () => {
             Sign in with Google
           </button>
 
-          <p className="mt-5 text-center text-sm text-muted-foreground">
+          {isLogin && (
+            <p className="mt-4 text-center">
+              <Link to="/forgot-password" className="text-sm text-muted-foreground hover:text-foreground hover:underline">
+                Forgot your password?
+              </Link>
+            </p>
+          )}
+
+          <p className="mt-3 text-center text-sm text-muted-foreground">
             {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
             <button onClick={() => setIsLogin(!isLogin)} className="font-semibold text-secondary hover:underline">
               {isLogin ? "Sign up" : "Sign in"}
