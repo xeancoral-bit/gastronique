@@ -13,6 +13,8 @@ import Cart from "./pages/Cart";
 import OrderHistory from "./pages/OrderHistory";
 import Favorites from "./pages/Favorites";
 import Auth from "./pages/Auth";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,8 @@ const App = () => (
                   <Route path="/orders" element={<OrderHistory />} />
                   <Route path="/favorites" element={<Favorites />} />
                   <Route path="/auth" element={<Auth />} />
+                  <Route path="/forgot-password" element={<ForgotPassword />} />
+                  <Route path="/reset-password" element={<ResetPassword />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </BrowserRouter>
